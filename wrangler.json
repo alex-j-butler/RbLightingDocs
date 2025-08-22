@@ -1,0 +1,12 @@
+{
+    "name": "rblightingdocs",
+    "compatibility_date": "2025-08-22",
+    "compatibility_flags": ["nodejs_compat"],
+    "assets": {
+      "directory": "./dist"
+    },
+    "observability": {
+      "enabled": true
+    },
+    "upload_source_maps": true
+  }
