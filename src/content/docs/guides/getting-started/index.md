@@ -5,6 +5,8 @@ description: Guide on using RbLighting for the first time.
 
 A quick guide to get SoundSwitch linked to Rekordbox, using the RbLighting tool.
 
+Please remember this is the first release of the tool, some things may not work on your system.
+
 
 ## What is RbLighting?
 
@@ -13,7 +15,7 @@ RbLighting is a small utility that bridges Rekordbox and SoundSwitch so your lig
 
 ## Installation
 
-Download the latest MSI installer of RbLighting from [here](https://rblighting.albiedj.com).
+Download the latest MSI installer of RbLighting from [here](/docs/download).
 
 Run the MSI installer. There is currently no installer UI, you will see the Windows Installer window briefly before it finishes installing.
 
@@ -71,3 +73,7 @@ If you do not, click "Settings" -> "Connect to SoundSwitch" within RbLighting to
 
 
 ![alt text](image-6.png)
+
+## Conclusion
+
+You should now have RbLighting set up with SoundSwitch and Rekordbox.
