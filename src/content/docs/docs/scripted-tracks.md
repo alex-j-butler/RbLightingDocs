@@ -5,7 +5,7 @@ description: Outlines how to use Scripted Tracks.
 
 This guide outlines how to create Rekordbox tracks with scripted lighting (ie. pre-programmed lighting sequences).
 
-# Export library
+## Export library
 
 You must export your Rekordbox library using RbLighting to a format that SoundSwitch understands.
 
@@ -21,7 +21,7 @@ Follow the steps below:
         This is the library we will point SoundSwitch.
 
 
-# Configure SoundSwitch
+## Configure SoundSwitch
 
 You can now configure SoundSwitch to use the library that we just exported.
 
@@ -37,7 +37,7 @@ You can now configure SoundSwitch to use the library that we just exported.
 3. Restart SoundSwitch
 
 
-# Result
+## Result
 
 You can now see your Rekordbox tracks in "Virtual DJ Tracks" in SoundSwitch:
 
