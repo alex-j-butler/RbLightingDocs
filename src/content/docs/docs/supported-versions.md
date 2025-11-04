@@ -11,7 +11,11 @@ The table below outlines the supported versions of Rekordbox.
 
 |Rekordbox Version  |Supported  |
 |-------            |:---:      |
+| 7.2.6             | ☑        |
+| 7.2.5             | ☑        |
 | 7.1.5             | ☑        |
 | 6.8.5             | ☑        |
-| 6.8.4             | ☑        |
+| 6.8.4             | ☑*        |
 | 6.8.3             | ❌       |
+
+\* Version is not compatible with some newer features.
