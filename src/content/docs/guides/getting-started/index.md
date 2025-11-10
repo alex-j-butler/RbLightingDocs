@@ -3,77 +3,188 @@ title: Getting Started
 description: Guide on using RbLighting for the first time.
 ---
 
-A quick guide to get SoundSwitch linked to Rekordbox, using the RbLighting tool.
+**Sync your Rekordbox DJ sets with SoundSwitch lighting in real-time**
 
-Please remember this is the first release of the tool, some things may not work on your system.
+Welcome! This guide will help you set up RbLighting so your lighting follows your music seamlessly. You'll be up and running in about 10 minutes.
 
+---
+
+## What You'll Need
+
+Before starting, make sure you have:
+
+- **Windows PC** (RbLighting currently supports Windows only)
+- **Rekordbox** installed
+- **SoundSwitch** installed
+- **Administrator access** to install software
+
+---
 
 ## What is RbLighting?
 
-RbLighting is a small utility that bridges Rekordbox and SoundSwitch so your lighting can follow your music in real time. It reads timing from Rekordbox (BPM, beat phase, downbeat, bar) and publishes it in a format SoundSwitch can utilise.
+RbLighting is a lightweight bridge application that connects Rekordbox and SoundSwitch. It captures real-time timing data from Rekordbox (BPM, beat phase, downbeats, and bars) and transmits it to SoundSwitch, enabling your lighting to stay perfectly synchronized with your music.
 
+**How it works:**
+```
+Rekordbox → RbLighting → SoundSwitch → Your Lighting
+```
+
+> **Note:** This is the first public release. While most users experience smooth operation, some configurations may require troubleshooting. Check the [troubleshooting guide](/docs/troubleshooting) if you encounter issues.
+
+
+---
 
 ## Installation
 
-Download the latest MSI installer of RbLighting from [here](/docs/download).
+### Step 1: Download RbLighting
 
-Run the MSI installer. There is currently no installer UI, you will see the Windows Installer window briefly before it finishes installing.
+1. Download the latest MSI installer from the [downloads page](/docs/download)
+2. Save the file to your computer
 
+### Step 2: Install RbLighting
 
-## First Run
+1. **Double-click** the downloaded MSI file
+2. The Windows Installer will run briefly (you may see it flash on screen)
+3. Installation completes automatically—no configuration needed
 
-The next steps will guide you through running RbLighting for the first time.
-
-### Rekordbox Setup
-
-Once installed, make sure Rekordbox is open, then open the RbLighting application from the start menu.
-
-If Rekordbox has successfully connected, you will be greeted with a screen that looks like below:
-
-![alt text](image-1.png)
+> **Technical Note:** The installer runs silently without a UI. If you don't see any errors, the installation was successful.
 
 ---
 
-If you see an orange connection icon the top left, you may need to click "Settings" -> "Connect to Rekordbox".
-The icon will go black once it has successfully connected to Rekordbox.
+## Setup Guide
 
-![alt text](image.png)
+### Part 1: Connect to Rekordbox
+
+#### 1. Launch Rekordbox
+Make sure Rekordbox is **open and running** before proceeding.
+
+#### 2. Start RbLighting
+- Open the **Start Menu**
+- Search for **"RbLighting"**
+- Click to launch the application
+
+#### 3. Verify Connection
+When RbLighting opens, you should see the main screen.
 
 
+> **Note:** Please wait 20-30 seconds to allow RbLighting to connect.
+
+**Successful Connection to Rekordbox:**
+- A **black AlphaTheta icon** in the top-left corner
+- The application window showing placeholders for track information
+
+![alt text](image-8.png)
+
+**Connection Failed (Orange Icon):**
+If you see an **orange AlphaTheta icon** instead:
+1. Click **"Settings"** in the menu
+2. Select **"Connect to Rekordbox"**
+3. Wait a moment—the icon should turn **black**
+
+![alt text](image-7.png)
+
+#### 4. Test the Connection
+1. Load any track in Rekordbox
+2. Press **Play**
+3. Watch the RbLighting window for updates:
+   - **Song name** should appear
+   - **BPM** should display
+   - **Play status** should change
+
+✅ **Success!** If you see these updates, Rekordbox is connected properly.
+
+❌ **Not Working?** See the [troubleshooting guide](/docs/troubleshooting) for solutions.
 
 ---
 
-Try to load a song in Rekordbox and you should see the song name, BPM and play status appear in the RbLighting window.
+### Part 2: Connect to SoundSwitch
 
-![alt text](image-3.png)
+#### 1. Open SoundSwitch Settings
+1. Launch **SoundSwitch**
+2. Click the **Settings** icon or menu
 
-If you do not see updates in RbLighting, please consult the [troubleshooting steps](/docs/troubleshooting)
+#### 2. Configure Input Source
+1. Navigate to the **"General"** tab
+2. Find the **"Input"** or **"DJ Software"** dropdown
+3. Select **"VirtualDJ"** from the list
 
-### SoundSwitch Setup
+> **Why VirtualDJ?** RbLighting communicates using VirtualDJ's protocol, which SoundSwitch supports.
 
-Open SoundSwitch and open the settings page.
+#### 3. Set Connection Mode
+- Keep **"Auto Connect"** enabled (recommended)
 
-Under "General", choose "VirtualDJ" as the input.
-
-Leave the connection mode on "Auto Connect" (see [known limitations](/docs/known-limitations) for more information).
+> **Note:** For known limitations with connection modes, see the [known limitations page](/docs/known-limitations).
 
 ![alt text](image-4.png)
 
-Restart SoundSwitch.
+#### 4. Restart SoundSwitch
+Close and reopen SoundSwitch to apply the changes.
 
----
-
-Once restarted, enter "Perform" mode and change the source to VirtualDJ:
+#### 5. Switch to Perform Mode
+1. In SoundSwitch, enter **"Perform"** mode
+2. Change the source to **"VirtualDJ"**
 
 ![alt text](image-5.png)
 
-RbLighting will periodically auto-connect to SoundSwitch and you should see "Connected" in SoundSwitch after a short time.
+#### 6. Verify Connection
+- RbLighting automatically attempts to connect to SoundSwitch every few seconds
+- Look for **"Connected"** status in SoundSwitch (usually appears within 5-10 seconds)
 
-If you do not, click "Settings" -> "Connect to SoundSwitch" within RbLighting to force a reconnection.
+**Manual Connection:**
+If the connection doesn't establish automatically:
+1. In RbLighting, click **"Settings"**
+2. Select **"Connect to SoundSwitch"**
+3. Wait for the connection status to update
 
+---
 
-![alt text](image-6.png)
+## You're All Set!
 
-## Conclusion
+Your lighting system is now synchronized with Rekordbox through RbLighting. Here's what happens now:
 
-You should now have RbLighting set up with SoundSwitch and Rekordbox.
+- When you play a track in Rekordbox, SoundSwitch receives real-time timing data
+- Your lighting cues will trigger in perfect sync with beats.
+- Changes in BPM are tracked automatically
+
+---
+
+## Quick Troubleshooting
+
+### RbLighting won't connect to Rekordbox
+- Ensure Rekordbox is running **before** starting RbLighting
+- Try restarting both applications
+- Check that you're using a compatible version of Rekordbox
+
+### SoundSwitch shows "Disconnected"
+- Verify you selected **"VirtualDJ"** as the input source
+- Click **"Connect to SoundSwitch"** in RbLighting's Settings menu
+- Restart SoundSwitch if the issue persists
+
+### Lighting is out of sync
+- Confirm the track is analyzed in Rekordbox (beat grid set)
+- Check that the BPM reading in RbLighting matches your track
+- Verify SoundSwitch shows "Connected" status
+
+For detailed troubleshooting, visit the [troubleshooting page](/docs/troubleshooting).
+
+---
+
+## Workflow Tips
+
+**Best Practice Setup:**
+1. Start **Rekordbox** first
+2. Launch **RbLighting** second
+3. Open **SoundSwitch** last
+4. Wait for both connections to establish before performing
+
+**During Your Set:**
+- Keep RbLighting running in the background
+- The connection should maintain automatically
+- If you notice sync issues, check RbLighting's connection icons
+
+---
+
+## Need More Help?
+
+- [Troubleshooting Guide](/docs/troubleshooting)
+- [Known Limitations](/docs/known-limitations)

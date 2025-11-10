@@ -9,7 +9,7 @@ description: Outlines the known limitations of the RbLighting software.
 
 You're seeing the orange connection icon in RbLighting.
 
-![alt text](../guides/getting-started/image.png)
+![alt text](troubleshooting-no-connection.png)
 
 ### Resolution
 
