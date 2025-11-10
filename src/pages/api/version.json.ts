@@ -2,7 +2,7 @@ export function GET({ }) {
   return new Response(
     JSON.stringify({
         version: "1.2.5.42533",
-        download_url: "https://rblighting.albiedj.com/downloads/RbLighting_1.2.4.msi"
+        download_url: "https://rblighting.albiedj.com/downloads/RbLighting_1.2.5.msi"
     }),
   );
 }
