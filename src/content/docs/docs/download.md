@@ -5,10 +5,14 @@ description: Download RbLighting here.
 
 You can find the latest version of RbLighting here:
 
-[Download RbLighting v1.3.27](/downloads/RbLighting_1.3.27.msi)
+[Download RbLighting v1.3.28](/downloads/RbLighting_1.3.28.msi)
 
 
 ## Changelog
+
+### Release v1.3.28
+
+* Fixed bug with crossfader.
 
 ### Release v1.3.27
 
