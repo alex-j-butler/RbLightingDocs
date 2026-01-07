@@ -5,10 +5,24 @@ description: Download RbLighting here.
 
 You can find the latest version of RbLighting here:
 
-[Download RbLighting v1.2.7](/downloads/RbLighting_1.2.7.msi)
+[Download RbLighting v1.3.27](/downloads/RbLighting_1.3.27.msi)
 
 
 ## Changelog
+
+### Release v1.3.27
+
+* Fixed update notification.
+
+### Release v1.3.26
+
+* v1.3 release!
+* UI Overhaul
+* Added support for Rekordbox 7.2.4
+* Added support for Rekordbox 7.2.7
+* Added support for Rekordbox 7.2.8
+* Added support for Rekordbox 6.8.6
+* Fixed SoundSwitch integration sending wrong values for Deck 2 time.
 
 ### Release v1.2.7
 
@@ -48,10 +62,3 @@ You can find the latest version of RbLighting here:
 * Added support for Rekordbox 7.2.5 and 7.2.6.
 * Added support for songs loaded from USB (using Device Library Plus) and streaming tracks.
 
-## Pre-release
-
-You can find the pre-release version of RbLighting here:
-
-[Download RbLighting v1.3 Pre-Release](/downloads/RbLighting_1.3.22-pre.msi)
-
-This branch contains the latest features that are still under development. This may be buggy and should be used with caution.
