@@ -5,10 +5,14 @@ description: Download RbLighting here.
 
 You can find the latest version of RbLighting here:
 
-[Download RbLighting v1.3.31](/downloads/RbLighting_1.3.31.msi)
+[Download RbLighting v1.3.31](/downloads/RbLighting_1.3.32.msi)
 
 
 ## Changelog
+
+### Release v1.3.32
+
+* Bug fix: Fixed access denied message after last update.
 
 ### Release v1.3.31
 
